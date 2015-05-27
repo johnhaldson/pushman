@@ -78,6 +78,8 @@ Pushman requires a database, so for both Forge and a regular server, enter your 
 
 Once the database configuration is set, you can run `php artisan migrate` followed by `php artisan key:generate` to publish the database layout. Or on Forge, just redeploy the site.
 
+You may also need to run find `storage/* -type d -exec chmod 775 {} \;` to grant write permissions on your storage folder
+
 **You MUST set an App Key.**
 
 #### Runtime
